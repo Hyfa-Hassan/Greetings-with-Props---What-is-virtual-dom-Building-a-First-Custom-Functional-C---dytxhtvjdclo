@@ -1,9 +1,10 @@
 // write code for Welcome component here
 import React from "react";
-function Welcome(props){
+function Welcome({props}){
+  let sayHi = `Hey ${name}!`;
   return(
     <>
-    <h1>Hey ! {props.name}</h1>
+    <h1>{sayHi}</h1>
     <h2>Welcome to Newton School</h2>
     </>
   );
